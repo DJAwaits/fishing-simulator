@@ -65,9 +65,6 @@ const sharkClickerButton = document.getElementById('sharkClicker');
 fishButton.addEventListener('click', function(){
     fishAmount += fishIncrement;
     fish.innerHTML = `Fish: ${fishAmount}`;
-    if (fishAmount > 0) {
-        fish.classList.remove('hidden');
-    }
 })
 
 // fishing pole button
