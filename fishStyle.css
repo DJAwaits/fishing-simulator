@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #061639;
+    color: #FFFFFF;
+}
+
+label {
+    display: block;
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: 14px;
+    color: #374151;
+}
+
+input[type="text"], textarea, select{
+    font-size: .875rem;
+    line-height: 1.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    color: #374151;
+}
+fieldset{
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    width: fit-content;
+    margin-bottom: 16px;
+    padding: 12px;
+}
+
+fieldset legend{
+    font-size: 14px;
+    color: #374151;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+
+input[type="checkbox"] ~ label, input[type="radio"] ~ label {
+    display: inline;
+}
+
+section{
+    margin-bottom: 16px;
+}
+
+section header{
+    margin-bottom: 8px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.content{
+    box-shadow: 0 1px 3px 0 rgba(0 0 0  0.1), 0 1px 2px -1px rgba(0 0 0  0.1);
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 600px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset {
+    width: 200px;
+    border: 5px solid #2e4372;  
+    box-shadow: 0 0 5px 5px #13264d inset;
+}
+.inventory-area {
+    width: 200px;
+    border: 5px solid lightblue;
+    float:left;
+    background-color:#2e4372;
+    box-shadow: 0 0 5px 5px #13264d inset;
+    text-align: center;
+    justify-content: center;
+}
+.fish-button-area {
+    width:100px;
+    border: 5px solid lightblue;
+    float:right;
+    background-color: #2e4372;
+    box-shadow: 0 0 5px 5px #13264d inset;
+}
+.button-area > * {
+    flex-basis: 100%;
+}
+button {
+    background-color: #4e638e;
+    width: 90px;
+    color: #FFFFFF;
+}
+.fish-area {
+    display:flex;
+}
+.pole-button-area {
+    width:100px;
+    border: 5px solid lightblue;
+    float:right;
+    background-color: #2e4372;
+    box-shadow: 0 0 5px 5px #13264d inset;
+}
+.net-button-area {
+    width:100px;
+    border: 5px solid lightblue;
+    float:right;
+    background-color: #2e4372;
+    box-shadow: 0 0 5px 5px #13264d inset;
+}
+.harpoon-button-area {
+    width:100px;
+    border: 5px solid lightblue;
+    float:right;
+    background-color: #2e4372;
+    box-shadow: 0 0 5px 5px #13264d inset;
+}
+.boat-button-area {
+    width:100px;
+    border: 5px solid lightblue;
+    float:right;
+    background-color: #2e4372;
+    box-shadow: 0 0 5px 5px #13264d inset;
+}
+.otter-button-area {
+    width:100px;
+    border: 5px solid lightblue;
+    float:right;
+    background-color: #2e4372;
+    box-shadow: 0 0 5px 5px #13264d inset;
+}
+.shark-button-area {
+    width:100px;
+    border: 5px solid lightblue;
+    float:right;
+    background-color: #2e4372;
+    box-shadow: 0 0 5px 5px #13264d inset;
+}
+.button-padding {
+    padding-bottom:20px;
+    padding-left: 48px;
+}
+.button-box {
+    width: 200px;
+}

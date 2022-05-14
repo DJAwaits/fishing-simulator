@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fishing Game</title>
+    <link href="fishStyle.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header / Title-->
+        <fieldset>
+            <div class=row>
+            <div class="header">
+                <h1 style="width: 438px; text-align:center;">Fishing Game</h1>
+            </div>
+            </div>
+        </fieldset>
+        <!-- Area of fishing stuff-->    
+        <div class="fish-area">
+            <fieldset>
+                <!-- Inventory Column-->
+                <div class="row"> 
+                    <div class="inventory-area">
+                        <h3 id="poleCount" class="hidden">Fishingpoles: 0</h3>
+                        <h3 id="netCount" class="hidden">Fishing Nets: 0</h3>
+                        <h3 id="harpoonCount" class="hidden">Harpoon Throwers: 0</h3>
+                        <h3 id="boatCount" class="hidden">Fishing Boats: 0</h3>
+                        <h3 id="otterCount" class="hidden">Trained Otters: 0</h3>
+                        <h3 id="sharkCount" class="hidden">Trained Shark: 0</h3>
+                        <h3 id="fish" class="hidden">Fish: 0</h3>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- Area With Purchasable Buttons-->
+            <fieldset class="button-area">
+                <div class="button-box">
+                    <div class="row">
+                        <div class="button-padding">              
+                            <div class="fish-button-area">
+                                <button id="fishButton"><img src="https://icons.veryicon.com/png/o/food--drinks/the-first-business-material-design/fish-26.png" height="60" width="60"><br>Catch Fish</button>
+                            </div>  
+                        </div>                         
+                    </div> 
+                    <div class="row">
+                        <div class="button-padding">
+                            <div class="pole-button-area">
+                                <button id="poleButton"><img src="https://cdn-icons-png.flaticon.com/512/1862/1862024.png" height="60" width="60">Buy Fishing Pole<br><br>30 Fish</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <h4 id="error" class="hidden"></h4>
+                    </div>
+                    <div class="row">
+                        <div class="button-padding">
+                            <div class="net-button-area">
+                                <button id="netButton"><img src="https://pngpress.com/wp-content/uploads/2021/06/015-fishing-net.png" height="60" width="60">Buy Fishing Net<br><br>300 Fish</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="button-padding">
+                            <div class="harpoon-button-area">
+                                <button id="harpoonButton"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/harpoon-3610895-3015320.png" height="60" width="60">Buy Harpoon Thrower<br><br>1,000 Fish</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="button-padding">
+                            <div class="boat-button-area">
+                                <button id="boatButton"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/fishing-boat-2519937-2113517.png" height="60" width="60">Buy Fishing Boat<br><br>3,000 Fish</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="button-padding">
+                            <div class="otter-button-area">
+                                <button id="otterButton"><img src="https://cdn0.iconfinder.com/data/icons/animal-kingdom-vol-1/512/otter_animal_mammal_water-512.png" height="60" width="60">Buy Trained Otter<br><br>10,000 Fish</button>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="button-padding">
+                            <div class="shark-button-area">
+                                <button id="sharkButton"><img src="https://cdn-icons-png.flaticon.com/512/1808/1808021.png" height="60" width="60">Buy Trained Shark<br><br>20,000 Fish</button>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </fieldset>  
+        </div>
+        <!-- Auto Clicker Buttons-->
+        <div class="hidden">
+            <button id="poleClicker"></button>
+            <button id="netClicker"></button>
+            <button id="harpoonClicker"></button>
+            <button id="boatClicker"></button>
+            <button id="otterClicker"></button>
+            <button id="sharkClicker"></button>
+        </div>
+    </div>
+    <script src="index.js"></script>     
+</body>
+</html>
