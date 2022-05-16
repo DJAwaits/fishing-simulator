@@ -40,31 +40,40 @@ const fishCount = document.getElementById('fish');
 const poleButton = document.getElementById('poleButton');
 const poleCount = document.getElementById('poleCount');
 const poleClickerButton = document.getElementById('poleClicker');
+const poleCostText = document.getElementById('poleCostText');
 
 const netButton = document.getElementById('netButton');
 const netCount = document.getElementById('netCount');
 const netClickerButton = document.getElementById('netClicker');
+const netCostText = document.getElementById('netCostText');
 
 const harpoonButton = document.getElementById('harpoonButton');
 const harpoonCount = document.getElementById('harpoonCount');
 const harpoonClickerButton = document.getElementById('harpoonClicker');
+const harpoonCostText = document.getElementById('harpoonCostText');
 
 const boatButton = document.getElementById('boatButton');
 const boatCount = document.getElementById('boatCount');
 const boatClickerButton = document.getElementById('boatClicker');
+const boatCostText = document.getElementById('boatCostText');
 
 const otterButton = document.getElementById('otterButton');
 const otterCount = document.getElementById('otterCount');
 const otterClickerButton = document.getElementById('otterClicker');
+const otterCostText = document.getElementById('otterCostText');
 
 const sharkButton = document.getElementById('sharkButton');
 const sharkCount = document.getElementById('sharkCount');
 const sharkClickerButton = document.getElementById('sharkClicker');
+const sharkCostText = document.getElementById('sharkCostText');
 
 // fish button
 fishButton.addEventListener('click', function(){
     fishAmount += fishIncrement;
     fish.innerHTML = `Fish: ${fishAmount}`;
+    if (fishAmount > 0) {
+        fish.classList.remove('hidden');
+    }
 })
 
 // fishing pole button
@@ -78,6 +87,9 @@ poleButton.addEventListener('click', function(){
             document.getElementById("poleClicker").click();
         }, poleSpeed);
         //error.classList.add('hidden');
+        poleCost *= 1.5;
+        poleCost = Math.round(poleCost);
+        poleCostText.innerHTML = `${poleCost} Fish`;
     } else {
         //error.classList.remove('hidden');
         //error.textContent = "You Don't Have Enough Money For A Fishing Pole!";
@@ -104,6 +116,9 @@ netButton.addEventListener('click', function(){
             document.getElementById("netClicker").click();
         }, netSpeed);
         //error.classList.add('hidden');
+        netCost *= 1.5;
+        netCost = Math.round(netCost);
+        netCostText.innerHTML = `${netCost} Fish`;
     } else {
         //error.classList.remove('hidden');
         //error.textContent = "You Don't Have Enough Money For A Fishing Net!";
@@ -130,6 +145,9 @@ harpoonButton.addEventListener('click', function(){
             document.getElementById("harpoonClicker").click();
         }, harpoonSpeed);
         //error.classList.add('hidden');
+        harpoonCost *= 1.5;
+        harpoonCost = Math.round(harpoonCost);
+        harpoonCostText.innerHTML = `${harpoonCost} Fish`;
     } else {
         //error.classList.remove('hidden');
         //error.textContent = "You Don't Have Enough Money For A Fishing Net!";
@@ -156,6 +174,9 @@ boatButton.addEventListener('click', function(){
             document.getElementById("boatClicker").click();
         }, boatSpeed);
         //error.classList.add('hidden');
+        boatCost *= 1.5;
+        boatCost = Math.round(boatCost);
+        boatCostText.innerHTML = `${boatCost} Fish`;
     } else {
         //error.classList.remove('hidden');
         //error.textContent = "You Don't Have Enough Money For A Fishing Net!";
@@ -182,6 +203,9 @@ otterButton.addEventListener('click', function(){
             document.getElementById("otterClicker").click();
         }, otterSpeed);
         //error.classList.add('hidden');
+        otterCost *= 1.5;
+        otterCost = Math.round(otterCost);
+        otterCostText.innerHTML = `${otterCost} Fish`;
     } else {
         //error.classList.remove('hidden');
         //error.textContent = "You Don't Have Enough Money For A Fishing Net!";
@@ -208,6 +232,9 @@ sharkButton.addEventListener('click', function(){
             document.getElementById("sharkClicker").click();
         }, sharkSpeed);
         //error.classList.add('hidden');
+        sharkCost *= 1.5;
+        sharkCost = Math.round(sharkCost);
+        sharkCostText.innerHTML = `${sharkCost} Fish`;
     } else {
         //error.classList.remove('hidden');
         //error.textContent = "You Don't Have Enough Money For A Fishing Net!";
